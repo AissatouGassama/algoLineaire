@@ -1,0 +1,45 @@
+ALGORITHM algorithm_name
+VAR
+    tab1: HASH_TABLE<INTEGER, INTEGER
+    htab2: HASH_TABLE<INTEGER, INTEGER>
+    N1, N2,i, j: INTEGER
+    stockage1, stockage2: INTEGER
+    count: INTEGER
+    sum=0: INTEGER
+
+BEGIN
+    write("donner la taille du tableau 1")
+    read(N1)
+    FOR i FROM 0 TO N1-1 STEP 1 DO
+        ("donner l'element à l'indice", i)
+        read("stockage1")
+        insert(i,stockage1)
+    END_FOR
+
+    write("donner la taille du tableau de hachage2 ")
+    read(N2)
+
+    FOR i FROM 0 TO N2-1 STEP step  DO
+    write("donner le stockage du tableau")
+    read(stockage2)
+    insert(j,stockage2)
+
+    END_FOR
+
+    FOR i FROM TO N1-1 STEP 1 DO
+        count=htab1.get(stockage1(i))
+        IF (htab2.search(count)= false) THEN
+            sum=sum+count
+        END_IF
+    END_FOR
+
+    FOR i FROM TO N2-1 STEP 1 DO
+        count=htab1.get(stockage2(i))
+        IF (htab2.search(count)= false) THEN
+            somme=sum+count
+        END_IF
+    END_FOR
+    write("la somme de des elements distinct est:", sum)
+
+    END_FOR
+END
